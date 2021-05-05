@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+
+</head>
+
+<body>
+    <ol>
+        <div class="container">
+            <li>
+                <b>Test image -</b>
+                <img id="img_1" src="tiger1.jpg" class="img-responsive">
+            </li>
+            <h5>Output on
+                <b>Microsoft azure</b> - <span>Tiger</span>
+            </h5>
+            <h5>Output on
+                <b>MobileNet Model</b> - <span id="sp_1"></span>
+            </h5>
+            <br>
+            <button id="btn_1" onclick="checking_1()" class="btn btn-primary">Check</button>
+            <br>
+            <br>
+            <div class="mini_result">
+                <h4>Result -
+                    <h4 id="heading_1"></h4>
+                </h4>
+                <hr>
+
+            </div>
+            <li>
+                <b>Test image -</b>
+                <img id="img_2" src="bench.jpg" class="img-responsive">
+            </li>
+            <h5>Output on
+                <b>Microsoft azure</b> - <span>bench</span>
+            </h5>
+            <h5>Output on
+                <b>MobileNet Model</b> - <span id="sp_2"></span>
+            </h5>
+            <br>
+            <button id="btn_2" onclick="checking_2()" class="btn btn-primary">Check</button>
+            <br>
+            <br>
+            <div class="mini_result">
+                <h4>Result -
+                    <h4 id="heading_2"></h4>
+                </h4>
+                <hr>
+            </div>
+            <li>
+                <b>Test image -</b>
+                <img id="img_3" src="computer.jpg" class="img-responsive">
+            </li>
+            <h5>Output on
+                <b>Microsoft azure</b> - <span>Desktop</span>
+            </h5>
+            <h5>Output on
+                <b>MobileNet Model</b> - <span id="sp_3"></span>
+            </h5>
+            <br>
+            <button id="btn_3" onclick="checking_3()" class="btn btn-primary">Check</button>
+            <br>
+            <br>
+            <div class="mini_result">
+                <h4>Result -
+                    <h4 id="heading_3"></h4>
+                </h4>
+                <hr>
+            </div>
+            <li>
+                <b>Test image -</b>
+                <img id="img_4" src="pasta.jpg" class="img-responsive">
+            </li>
+            <h5>Output on
+                <b>Microsoft azure</b> - <span>Food</span>
+            </h5>
+            <h5>Output on
+                <b>MobileNet Model</b> - <span id="sp_4"></span>
+            </h5>
+            <br>
+            <button id="btn_4" onclick="checking_4()" class="btn btn-primary">Check</button>
+            <br>
+            <br>
+            <div class="mini_result">
+                <h4>Result -
+                    <h4 id="heading_4"></h4>
+                </h4>
+                <hr>
+            </div>
+        </div>
+    </ol>
+    <script src="main.js"></script>
+</body>
+
+</html>
